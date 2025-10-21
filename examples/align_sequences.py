@@ -2,7 +2,6 @@
 
 """Example script that shows how to align two or more sequences using versalign."""
 
-
 from versalign.aligner import setup_aligner
 from versalign.msa import calc_msa
 from versalign.pairwise import calc_pairwise_alignment
