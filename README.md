@@ -13,8 +13,8 @@
       <img alt="PyPI" src="https://img.shields.io/pypi/v/versalign" /></a>
     <a href="https://pypi.org/project/versalign">
       <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/versalign" /></a>
-     <!-- <a href="https://doi.org/10.5281/zenodo.11216453">
-      <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.11216453.svg" alt="DOI" /></a> -->
+     <a href="https://doi.org/10.5281/zenodo.17410570">
+      <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17410570.svg" alt="DOI" /></a>
 </p>
 
 Versalign is a naive alignment tool for lists of arbitrary objects. Versalign is able to perform pairwise sequence alignments and star-based multiple sequence alignments, based on custom scoring functions. Versalign is primarily designed to align short-ish sequences.
