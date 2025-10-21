@@ -12,7 +12,7 @@ from versalign.scoring import create_substituion_matrix_dynamically
 def main() -> None:
     """Main function to demonstrate sequence alignment."""
     
-    # --- CASE 2 ---
+    # --- CASE 1 ---
     # Simple equality scoring ACGT
     objs = list("ACGT-")
     sm, _ = create_substituion_matrix_dynamically(objs)
