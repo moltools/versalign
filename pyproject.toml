@@ -1,13 +1,38 @@
 [project]
 name = "versalign"
-version = "2.0.0"
+version = "2.0.1"
+description = "Naive alignment for lists of arbitrary objects"
+readme = "README.md"
 requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "David Meijer", email = "david.meijer@wur.nl" }
+]
+keywords = ["alignment", "msa", "pairwise", "arbitrary-objects"]
 
 dependencies = [
     "biopython",
     "numpy",
     "pandas"
 ]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+
+[project.urls]
+Homepage = "https://github.com/moltools/versalign"
+Repository = "https://github.com/moltools/versalign"
+Issues = "https://github.com/moltools/versalign/issues"
+Documentation = "https://github.com/moltools/versalign#readme"
 
 [build-system]
 requires = ["hatchling"]
@@ -23,7 +48,7 @@ dev = [
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/versalign"]
+packages = ["versalign"]
 sources = ["src"]
 
 [tool.hatch.build]

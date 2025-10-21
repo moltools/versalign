@@ -6,3 +6,5 @@ env/
 *.pyc
 .idea/
 .ruff_cache/
+dist/
+.pypirc

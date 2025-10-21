@@ -1,8 +1,9 @@
 <p align="center">
-    <img 
-        src="https://github.com/moltools/versalign/blob/main/logo.png" 
-        height="150"
-    />
+    <img
+      src="https://raw.githubusercontent.com/moltools/versalign/main/logo.png"
+      height="150"
+      alt="Versalign logo"
+    />  
 </p>
 
 <p align="center">
@@ -42,4 +43,4 @@ Versalign has been developed for Linux and MacOS.
 
 ## Getting started
 
-See the [examples](examples/) folder for some basic usage examples.
+See the [examples](https://github.com/moltools/versalign/tree/main/examples) folder for some basic usage examples.
