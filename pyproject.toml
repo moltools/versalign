@@ -1,10 +1,10 @@
 [project]
 name = "versalign"
-version = "2.0.2"
+version = "2.0.3"
 description = "Naive alignment for lists of arbitrary objects"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { file = "LICENSE" }
+license = { text = "MIT" }
 authors = [
     { name = "David Meijer", email = "david.meijer@wur.nl" }
 ]
@@ -48,7 +48,7 @@ dev = [
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["versalign"]
+packages = ["src/versalign"]
 sources = ["src"]
 
 [tool.hatch.build]
