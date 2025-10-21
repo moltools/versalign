@@ -13,8 +13,6 @@
       <img alt="PyPI" src="https://img.shields.io/pypi/v/versalign" /></a>
     <a href="https://pypi.org/project/versalign">
       <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/versalign" /></a>
-    <a href="https://github.com/moltools/versalign/blob/main/LICENSE">
-      <img alt="PyPI - License" src="https://img.shields.io/pypi/l/versalign" /></a>
      <!-- <a href="https://doi.org/10.5281/zenodo.11216453">
       <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.11216453.svg" alt="DOI" /></a> -->
 </p>
