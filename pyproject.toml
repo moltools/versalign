@@ -5,7 +5,8 @@ requires-python = ">=3.10"
 
 dependencies = [
     "biopython",
-    "numpy"
+    "numpy",
+    "pandas"
 ]
 
 [build-system]

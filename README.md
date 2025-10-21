@@ -42,7 +42,4 @@ Versalign has been developed for Linux and MacOS.
 
 ## Getting started
 
-Versalign can be used as follows:
-
-```python
-```
+See the [examples](examples/) folder for some basic usage examples.
