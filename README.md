@@ -2,7 +2,7 @@
     <img
       src="https://raw.githubusercontent.com/moltools/versalign/main/logo.png"
       height="150"
-      alt="Versalign logo"
+      alt="versalign logo"
     />  
 </p>
 
