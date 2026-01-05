@@ -1,14 +1,13 @@
 """Scoring module for sequence alignment."""
 
 from collections.abc import Callable, Hashable, Sequence
-from typing import Any, TypeVar
+from typing import Any
 
 import numpy as np
 import pandas as pd
 
 from versalign.aligner import substitution_matrices
-
-T = TypeVar("T")
+from versalign.types import T
 
 
 def default_compare(a: Any, b: Any) -> float:

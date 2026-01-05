@@ -5,7 +5,7 @@ from dataclasses import dataclass
 
 from Bio.Align import PairwiseAligner, substitution_matrices
 
-from versalign.scoring import T
+from versalign.types import T
 
 # Define __all__ for explicit export of PairwiseAligner class
 __all__ = ["PairwiseAligner", "substitution_matrices"]
