@@ -2,7 +2,7 @@
 
 """Example script that shows how to align blocks of sequences using versalign."""
 
-from versalign.scoring import create_substituion_matrix_dynamically
+from versalign.scoring import create_substitution_matrix_dynamically
 from versalign.aligner import setup_aligner
 from versalign.blocking import calc_block_msa
 
@@ -10,7 +10,7 @@ from versalign.blocking import calc_block_msa
 def main() -> None:
     """Main function to demonstrate block alignment."""
     objs = list("ACGT-")
-    sm, _ = create_substituion_matrix_dynamically(objs)
+    sm, _ = create_substitution_matrix_dynamically(objs)
     aligner = setup_aligner(
         sm,
         "global",

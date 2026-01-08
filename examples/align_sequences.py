@@ -6,7 +6,7 @@ from versalign.aligner import setup_aligner
 from versalign.msa import calc_msa
 from versalign.pairwise import calc_pairwise_alignment
 from versalign.printing import format_alignment
-from versalign.scoring import create_substituion_matrix_dynamically
+from versalign.scoring import create_substitution_matrix_dynamically
 
 
 def main() -> None:
@@ -15,7 +15,7 @@ def main() -> None:
     # --- CASE 1 ---
     # Simple equality scoring ACGT
     objs = list("ACGT-")
-    sm, _ = create_substituion_matrix_dynamically(objs)
+    sm, _ = create_substitution_matrix_dynamically(objs)
     aligner = setup_aligner(sm, "global")
 
     # Define example sequences
@@ -47,7 +47,7 @@ def main() -> None:
         return -2      # transversion
 
     objs = list("ACGT-")
-    sm, _ = create_substituion_matrix_dynamically(objs, compare=dna_ti_tv_compare)
+    sm, _ = create_substitution_matrix_dynamically(objs, compare=dna_ti_tv_compare)
     aligner = setup_aligner(sm, "global")
 
     # Define example sequences
@@ -79,7 +79,7 @@ def main() -> None:
         return 1 if cls(a) == cls(b) else -2
 
     objs = list("ACDEFGHIKLMNPQRSTVWY-")
-    sm, _ = create_substituion_matrix_dynamically(objs, compare=aa_class_compare)
+    sm, _ = create_substitution_matrix_dynamically(objs, compare=aa_class_compare)
     aligner = setup_aligner(sm, "global")
 
     # Define example sequences
@@ -107,7 +107,7 @@ def main() -> None:
         return r if r == "-" else r.name
 
     residues = [Residue("X", 100.0), Residue("Y", 101.3), Residue("Z", 97.8), "-"]
-    sm, _ = create_substituion_matrix_dynamically(residues, compare=residue_compare, label_fn=label_fn)
+    sm, _ = create_substitution_matrix_dynamically(residues, compare=residue_compare, label_fn=label_fn)
     aligner = setup_aligner(sm, "global", label_fn=label_fn)
 
     # Define example sequences

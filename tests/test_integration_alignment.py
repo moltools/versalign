@@ -11,7 +11,7 @@ import pytest
 from versalign.aligner import setup_aligner
 from versalign.pairwise import calc_pairwise_alignment
 from versalign.printing import format_alignment
-from versalign.scoring import create_substituion_matrix_dynamically
+from versalign.scoring import create_substitution_matrix_dynamically
 
 
 purines = {"A", "G"}
@@ -54,7 +54,7 @@ def test_pairwise_dna_ti_tv_single_symbols():
     We use 1-character sequences so the aligned score equals the substitution score.
     """
     objs = list("ACGT-")
-    sm, _ = create_substituion_matrix_dynamically(objs, compare=dna_ti_tv_compare)
+    sm, _ = create_substitution_matrix_dynamically(objs, compare=dna_ti_tv_compare)
     aligner = setup_aligner(sm, "global")
 
     # A vs A -> +2 (match)
@@ -80,7 +80,7 @@ def test_pairwise_protein_class_single_symbols():
     A vs D is hydro vs negative -> -2 (different class)
     """
     objs = list("ACDEFGHIKLMNPQRSTVWY-")
-    sm, _ = create_substituion_matrix_dynamically(objs, compare=aa_class_compare)
+    sm, _ = create_substitution_matrix_dynamically(objs, compare=aa_class_compare)
     aligner = setup_aligner(sm, "global")
 
     # A vs V (hydro vs hydro) -> +1

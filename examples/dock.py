@@ -2,7 +2,7 @@
 
 """Example script that shows how to dock a block-sequence to a sequence using versalign."""
 
-from versalign.scoring import create_substituion_matrix_dynamically
+from versalign.scoring import create_substitution_matrix_dynamically
 from versalign.aligner import setup_aligner
 from versalign.docking import dock_against_target
 
@@ -23,7 +23,7 @@ def main() -> None:
     objs.update(target)
     for block in query:
         objs.update(block)
-    sm, _ = create_substituion_matrix_dynamically(list(objs))
+    sm, _ = create_substitution_matrix_dynamically(list(objs))
     aligner = setup_aligner(
         sm,
         "global",

@@ -91,7 +91,7 @@ def create_substitution_matrix(df: pd.DataFrame) -> tuple[substitution_matrices.
     return sm, alphabet
 
 
-def create_substituion_matrix_dynamically(
+def create_substitution_matrix_dynamically(
     objs: Sequence[T],
     compare: Callable[[T, T], float] | None = None,
     *,
